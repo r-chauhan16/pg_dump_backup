@@ -43,14 +43,14 @@ do
 	if ! /usr/pgsql-14/bin/pg_dump -v -w -d $dbname -U $username -h $host -p $port -Fd -Z 6 -f $backup_loc/$dbname/$timestamp 2> $logfile
 	then
 		echo " " >> $logfile
-    echo "Dump backup failed" >> $logfile
-    echo "$dbname-$startTime-$endTime-Failed" >> $dump_logfile
-    continue
+    		echo "Dump backup failed" >> $logfile
+    		echo "$dbname-$startTime-$endTime-Failed" >> $dump_logfile
+    		continue
 	fi	
 	endTime=$(date)
 	echo " " >> $logfile
-  echo "Dump backup completed at $endTime" >> $logfile
-  echo "$dbname-$startTime-$endTime-OK" >> $dump_logfile
+  	echo "Dump backup completed at $endTime" >> $logfile
+  	echo "$dbname-$startTime-$endTime-OK" >> $dump_logfile
 
 done 9< $file
 
