@@ -1,3 +1,3 @@
 # pg_dump_backup
 Take a dump backup of all test and prod environments using single script
-As of now only Azure Blob is supported
+Cloud support is on the way - Azure Blob storage using azcopy
