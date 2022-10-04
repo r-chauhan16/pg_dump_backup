@@ -1,5 +1,10 @@
 #!/bin/bash
 
+###########################
+#postgresql binary location
+###########################
+psql_home=/usr/pgsql-14
+
 ##################################################
 ##Backup location for all the postgresql databases
 ##################################################
