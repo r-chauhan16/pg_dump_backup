@@ -8,8 +8,7 @@ The file .pgpass in a user's home directory can contain passwords to be used if 
 
 ### _db_name.conf
 This file contains necessary database details which are required by [pg_dump](https://www.postgresql.org/docs/current/app-pgdump.html).
-###### Usage:
-dbname:hostname:port:(Y/N) 
+###### Usage: dbname:hostname:port:(Y/N) 
 
-Y - means take a dump backup of this dbname
+Y - means take a dump backup of this dbname.
 N - means do not take a dump backup of this dbname
